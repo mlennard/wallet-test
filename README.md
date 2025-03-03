@@ -4,9 +4,9 @@
 
 ```mermaid
 erDiagram
-    WALLET ||--o{ TRANSACTION : "1 wallet tiene muchas transacciones"
-    WALLET ||--o{ BALANCE_SNAPSHOT : "1 wallet tiene muchos snapshots"
-    TRANSACTION ||--o{ AUDIT_LOG : "1 transacción genera muchos logs de auditoría"
+    WALLET ||--o{ TRANSACTION : "1 wallet has many transactions"
+    WALLET ||--o{ BALANCE_SNAPSHOT : "1 wallet has many snapshots"
+    TRANSACTION ||--o{ AUDIT_LOG : "1 transaction generates a lot of audit logs"
 
     WALLET {
         string walletId PK
